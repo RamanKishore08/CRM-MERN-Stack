@@ -1,0 +1,134 @@
+.visualization-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+.visualization-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #66a6ff, #f47c7c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.go-home-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.go-home-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #4CAF50;
+}
+
+.chart {
+  width: 48%;
+  margin: 15px 1%;
+  display: inline-block;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.bar-chart-single {
+  width: 100%;
+  margin: 15px 0;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bar-chart-single:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .chart {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  h3, h4 {
+    font-size: 1.2rem;
+  }
+
+  .go-home-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .visualization-container h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .visualization-container {
+    padding: 10px;
+  }
+
+  h3, h4 {
+    font-size: 1rem;
+  }
+
+  .chart {
+    padding: 15px;
+  }
+
+  .go-home-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .visualization-container h2 {
+    font-size: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

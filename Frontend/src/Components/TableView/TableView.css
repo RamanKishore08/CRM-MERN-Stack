@@ -1,0 +1,143 @@
+.table-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #e6f7ff 100%);
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 0.3s;
+  overflow-x: auto; /* Ensure the table doesn't overflow */
+}
+
+.table-container:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box; /* Make sure the table fits within padding */
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #555;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.01);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+  background-color: #66a6ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: #557acc;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #f47c7c;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #d66969;
+  transform: scale(1.05);
+}
+
+.btn-home {
+  background-color: #398d7f;
+  color: #fff;
+}
+
+.btn-home:hover {
+  background-color: #144e45;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .btn-custom {
+    background-color: #66a6ff;
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background-color: #f47c7c;
+    color: #fff;
+  }
+
+  .btn-home {
+    background-color: #398d7f;
+    color: #fff;
+  }
+
+  .btn-danger {
+    background-color: #f44336;
+    color: #fff;
+  }
+}

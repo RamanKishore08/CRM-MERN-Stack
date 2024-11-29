@@ -1,0 +1,50 @@
+.login-register-container {
+    height: 100vh;
+    background: linear-gradient(to right, #8149bd, #5083dc);
+    color: white;
+  }
+  
+  .login-register-card {
+    background: #cbc1c1;
+    border-radius: 15px;
+    max-width: 550px;
+    width: 60%;
+    opacity: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-register-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .animated-input {
+    transition: all 0.3s;
+  }
+  
+  .animated-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+  }
+  
+  .animated-button {
+    background-color: #6a11cb;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+  }
+  
+  .animated-button:hover {
+    background-color: #2575fc;
+    transform: translateY(-3px);
+  }
+  
+  .toggle-button {
+    color: #2575fc;
+    transition: color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    color: #6a11cb;
+    text-decoration: none;
+  }
+  

@@ -9,7 +9,7 @@
 
 ---
 
-A modern **CRM (Customer Relationship Management)** web application built using the MERN stack. This application helps businesses manage customer interactions, sales processes, and client data efficiently. With an intuitive user interface and real-time data visualization, this CRM makes customer management simpler and more productive.  
+A Customer Relationship Management (CRM) application is developed using the MERN stack to manage sales data efficiently. It enables tracking, Excel report generation, and trend visualization. This enhances decision-making and boosts business growth.
 
 ---
 
